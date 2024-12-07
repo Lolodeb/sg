@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #222;
+    color: #fff;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+canvas {
+    border: 2px solid #fff;
+    background: #000;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.control-btn {
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-btn:hover {
+    background: #666;
+}
+
+.control-btn:active {
+    background: #888;
+}
+
+@media (min-width: 768px) {
+    .controls {
+        display: none; /* Les commandes tactiles ne s'affichent pas sur grand écran */
+    }
+}
